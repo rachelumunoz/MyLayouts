@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+    <TextView
+        android:id="@+id/nameTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/nameET"
+        android:layout_alignParentTop="true"
+        android:layout_alignStart="@+id/nameET"
+        android:layout_marginTop="58dp"
+        android:textAllCaps="true"
+        android:text="Full Name"/>
+
+    <EditText
+        android:id="@+id/nameET"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/passwordET"
+        android:layout_alignStart="@+id/passwordET"
+        android:layout_below="@+id/nameTV"
+        android:ems="10"
+        android:hint="Enter your full name"
+        android:inputType="textPersonName"/>
+
+    <TextView
+        android:id="@+id/emailTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/nameET"
+        android:layout_alignStart="@+id/nameET"
+        android:layout_below="@+id/nameET"
+        android:layout_marginTop="18dp"
+        android:textAllCaps="true"
+        android:text="Email"/>
+
+    <EditText
+        android:id="@+id/emailET"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/emailTV"
+        android:layout_alignStart="@+id/emailTV"
+        android:layout_below="@+id/emailTV"
+        android:ems="10"
+        android:hint="Email"
+        android:inputType="textEmailAddress"/>
+
+    <TextView
+        android:id="@+id/passwordTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/emailET"
+        android:layout_alignStart="@+id/emailET"
+        android:layout_below="@+id/emailET"
+        android:layout_marginTop="18dp"
+        android:textAllCaps="true"
+
+        android:text="Password"/>
+
+    <EditText
+        android:id="@+id/passwordET"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/passwordTV"
+        android:layout_centerHorizontal="true"
+        android:ems="10"
+        android:hint="*******"
+        android:inputType="textPassword"/>
+
+    <CheckBox
+        android:id="@+id/checkBox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/passwordET"
+        android:layout_alignStart="@+id/passwordET"
+        android:layout_below="@+id/passwordET"
+        android:layout_marginTop="20dp"
+        android:text="I agree to all statements in"/>
+
+    <TextView
+        android:id="@+id/terms_of_service"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/checkBox"
+        android:layout_alignStart="@+id/checkBox"
+        android:layout_below="@+id/checkBox"
+        android:layout_marginLeft="27dp"
+        android:layout_marginStart="27dp"
+        android:text="Terms of Service"/>
+
+    <TextView
+        android:id="@+id/sign_up"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+
+        android:layout_alignEnd="@+id/emailET"
+        android:layout_alignLeft="@+id/emailET"
+        android:layout_alignRight="@+id/emailET"
+        android:layout_alignStart="@+id/emailET"
+        android:layout_below="@+id/terms_of_service"
+        android:layout_marginTop="21dp"
+        android:background="#29acb6"
+        android:gravity="center"
+        android:text="Sign Up"
+        android:textColor="#e4e4e4"/>
+</RelativeLayout>
