@@ -5,6 +5,8 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 
+import io.rachelmunoz.mylayouts.login_signup.LoginSignUpActivity;
+
 public class MainActivity extends AppCompatActivity {
 
 	@Override

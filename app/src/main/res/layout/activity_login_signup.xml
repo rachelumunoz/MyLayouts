@@ -44,7 +44,6 @@
         android:background="#4f9eb9"
         android:gravity="center"
         android:textColor="#e4e4e4"
-        android:onClick="showSignupDialog"
         android:text="Log In"/>
 
     <TextView
@@ -60,6 +59,7 @@
         android:background="#29acb6"
         android:gravity="center"
         android:textColor="#e4e4e4"
+        android:onClick="showSignupDialog"
         android:text="Sign Up"/>
 
     <TextView

@@ -1,9 +1,11 @@
-package io.rachelmunoz.mylayouts;
+package io.rachelmunoz.mylayouts.login_signup;
 
 import android.support.v4.app.FragmentManager;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
+
+import io.rachelmunoz.mylayouts.R;
 
 public class LoginSignUpActivity extends AppCompatActivity {
 
