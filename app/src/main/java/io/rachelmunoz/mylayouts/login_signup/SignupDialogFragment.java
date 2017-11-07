@@ -25,7 +25,7 @@ public class SignupDialogFragment extends DialogFragment {
 		LayoutInflater inflater = getActivity().getLayoutInflater();
 
 		// Inflate and set the layout for the dialog
-		// Pass null as the parent view because its going in the dialog layout
+		// Pass null as the parent vie w because its going in the dialog layout
 		builder.setView(inflater.inflate(R.layout.dialog_signup, null))
 				// Add action buttons
 				.setPositiveButton(R.string.ok, new DialogInterface.OnClickListener() {
