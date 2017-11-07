@@ -15,6 +15,7 @@
         android:hint="email"
         android:textColorHint="#e4e4e4"
         android:backgroundTint="#c1c1c1"
+        android:textColor="@android:color/white"
         android:inputType="textEmailAddress"/>
 
     <EditText
@@ -29,6 +30,7 @@
         android:hint="password"
         android:textColorHint="#e4e4e4"
         android:backgroundTint="#c1c1c1"
+        android:textColor="@android:color/white"
         android:inputType="textPassword"/>
 
     <TextView
@@ -56,7 +58,7 @@
         android:layout_alignStart="@+id/log_in"
         android:layout_below="@+id/log_in"
         android:layout_marginTop="21dp"
-        android:background="#29acb6"
+        android:background="@color/colorAccent"
         android:gravity="center"
         android:textColor="#e4e4e4"
         android:onClick="showSignupDialog"
@@ -70,7 +72,10 @@
         android:layout_centerHorizontal="true"
         android:layout_marginBottom="11dp"
         android:textColor="#c1c1c1"
-        android:text="HELP"/>
+        android:textAllCaps="true"
+        android:text="help"
+        android:clickable="true"
+        android:onClick="onHelpClick"/>
 
 
 </RelativeLayout>

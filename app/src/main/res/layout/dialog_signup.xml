@@ -88,20 +88,22 @@
         android:layout_below="@+id/checkBox"
         android:layout_marginLeft="27dp"
         android:layout_marginStart="27dp"
+        android:textColor="@color/colorAccent"
+        android:clickable="true"
+        android:onClick="termsOfService"
         android:text="Terms of Service"/>
 
     <TextView
         android:id="@+id/sign_up"
         android:layout_width="wrap_content"
         android:layout_height="40dp"
-
         android:layout_alignEnd="@+id/emailET"
         android:layout_alignLeft="@+id/emailET"
         android:layout_alignRight="@+id/emailET"
         android:layout_alignStart="@+id/emailET"
         android:layout_below="@+id/terms_of_service"
         android:layout_marginTop="21dp"
-        android:background="#29acb6"
+        android:background="@color/colorAccent"
         android:gravity="center"
         android:text="Sign Up"
         android:textColor="#e4e4e4"/>
