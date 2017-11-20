@@ -18,6 +18,8 @@
         </activity>
         <activity android:name=".login_signup.LoginSignUpActivity">
         </activity>
+        <activity android:name=".inbox.InboxActivity">
+        </activity>
     </application>
 
 </manifest>

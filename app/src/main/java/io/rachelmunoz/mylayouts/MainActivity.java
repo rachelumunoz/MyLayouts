@@ -5,6 +5,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 
+import io.rachelmunoz.mylayouts.inbox.InboxActivity;
 import io.rachelmunoz.mylayouts.login_signup.LoginSignUpActivity;
 
 public class MainActivity extends AppCompatActivity {
@@ -17,6 +18,11 @@ public class MainActivity extends AppCompatActivity {
 
 	public void gotoLogin(View view) {
 		Intent i = new Intent(this, LoginSignUpActivity.class);
+		startActivity(i);
+	}
+
+	public void gotoInbox(View view) {
+		Intent i = new Intent(this, InboxActivity.class);
 		startActivity(i);
 	}
 }
