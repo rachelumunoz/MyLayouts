@@ -6,6 +6,7 @@ import android.os.PersistableBundle;
 import android.support.annotation.Nullable;
 import android.support.design.widget.FloatingActionButton;
 import android.support.v7.app.AppCompatActivity;
+import android.support.v7.widget.DividerItemDecoration;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.support.v7.widget.Toolbar;
@@ -34,7 +35,11 @@ public class InboxActivity extends AppCompatActivity {
 		setContentView(R.layout.activity_inbox);
 
 		Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
-		toolbar.setTitle("Inbox");
+		toolbar.setTitleTextColor(getResources().getColor(R.color.white));
+
+		setSupportActionBar(toolbar);
+		getSupportActionBar().setIcon(R.drawable.ic_menu);
+
 
 		mFloatingActionButton = (FloatingActionButton) findViewById(R.id.fab) ;
 //		mFloatingActionButton.setBackgroundColor(getResources().getColor(R.color.inboxRed));
@@ -42,6 +47,7 @@ public class InboxActivity extends AppCompatActivity {
 
 		mRecyclerView = findViewById(R.id.recycler);
 		mRecyclerView.setLayoutManager(new LinearLayoutManager(this));
+		mRecyclerView.addItemDecoration(new DividerItemDecoration(this,  DividerItemDecoration.VERTICAL));
 
 		mContext = this;
 
